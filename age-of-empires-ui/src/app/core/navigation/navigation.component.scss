@@ -1,0 +1,27 @@
+.navigationContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .routers {
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+
+    .router {
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+  }
+}

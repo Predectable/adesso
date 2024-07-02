@@ -1,0 +1,50 @@
+<div class="unitShow">
+  <div class="item">
+    <span>ID:</span>
+    <span>{{ unit?.id }}</span>
+  </div>
+  <div class="item">
+    <span>Name:</span>
+    <span>{{ unit?.unitType?.name }}</span>
+  </div>
+  <div class="item">
+    <span>Description:</span>
+    <span>{{ unit?.unitType?.description }}</span>
+  </div>
+  <div class="item">
+    <span>Min. Required Age:</span>
+    <span>{{ unit?.age?.name }}</span>
+  </div>
+  <div class="item">
+    <span>Wood Cost:</span>
+    <span>{{ filterCost("Wood") }}</span>
+  </div>
+  <div class="item">
+    <span>Food Cost:</span>
+    <span>{{ filterCost("Food") }}</span>
+  </div>
+  <div class="item">
+    <span>Gold Cost:</span>
+    <span>{{ filterCost("Gold") }}</span>
+  </div>
+  <div class="item">
+    <span>Build Time:</span>
+    <span>{{ unit?.buildTime }}</span>
+  </div>
+  <div class="item">
+    <span>Reload Time:</span>
+    <span>{{ unit?.reloadTime }}</span>
+  </div>
+  <div class="item">
+    <span>Hit Points:</span>
+    <span>{{ unit?.hitPoints }}</span>
+  </div>
+  <div class="item">
+    <span>Attack:</span>
+    <span>{{ unit?.attack }}</span>
+  </div>
+  <div class="item">
+    <span>Accuracy:</span>
+    <span>{{ unit?.accuracy }}</span>
+  </div>
+</div>

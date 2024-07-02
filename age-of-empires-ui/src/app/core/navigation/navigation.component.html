@@ -1,0 +1,13 @@
+<div class="navigationContainer">
+  <div class="title">{{ title }}</div>
+  <div class="routers">
+    @for (router of ROUTERS; track router.id) { @if(router.visible){
+    <p-button
+      class="router"
+      [label]="router.name"
+      [link]="true"
+      (click)="navigateTo(router.link)"
+    />
+    } }
+  </div>
+</div>

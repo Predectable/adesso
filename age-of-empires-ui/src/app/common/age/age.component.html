@@ -1,0 +1,13 @@
+<div class="ageContainer">
+  <div class="title">Ages</div>
+  <div class="ageFilter">
+    <p-selectButton
+      [options]="ages"
+      [(ngModel)]="selectedAgeId"
+      optionLabel="name"
+      optionValue="id"
+      (onChange)="onAgeValueChange()"
+      [unselectable]="true"
+    />
+  </div>
+</div>

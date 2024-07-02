@@ -1,0 +1,11 @@
+<div class="costContainer">
+  <div class="title">Costs</div>
+  <div class="resourceContainer">
+    @for (resource of resources; track resource.id) {
+    <resource
+      [label]="resource.name"
+      (onResourceChange)="onRangeChange($event, resource.id)"
+    ></resource>
+    }
+  </div>
+</div>

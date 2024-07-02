@@ -1,0 +1,11 @@
+.resourceContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .range {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,24 @@
+<div class="resourceContainer">
+  <div class="selection">
+    <p-checkbox
+      [(ngModel)]="checked"
+      (ngModelChange)="onCheckboxChange()"
+      inputId="checkbox"
+      [binary]="true"
+    />
+    &nbsp;
+    <label for="checkbox">{{ label }}</label>
+  </div>
+  <div class="range">
+    <p-slider
+      styleClass="slider"
+      [(ngModel)]="rangeValues"
+      [range]="true"
+      [min]="minValue"
+      [max]="maxValue"
+      [disabled]="!checked"
+      (onSlideEnd)="onSlideChange()"
+    />
+    <span class="minMax">{{ rangeValues[0] }} - {{ rangeValues[1] }}</span>
+  </div>
+</div>
